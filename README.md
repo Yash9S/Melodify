@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -38,4 +37,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 =======
 # Melodify
 Melodify Web Application
->>>>>>> c986026afc77289cfd467d675c0bd2233977b3b5
+
+## Command to run Postgres run time environment using Dokcer
+docker run -p 5433:5432 -e POSTGRES_PASSWORD=randompassword postgres
+
+## Prisma commands for any db changes
+npx prisma migrate dev
+npx prisma generate
+npx prisma studio

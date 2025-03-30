@@ -32,6 +32,9 @@ export async function POST(req: NextRequest) {
             streamId: data.streamId
         }
     });
+    return NextResponse.json({
+        message: "Done!"
+    })
   } catch {
     return NextResponse.json({
         message: "Error while upvoting"
